@@ -1,0 +1,15 @@
+if(!window['googleNDT_']){window['googleNDT_']=(new Date()).getTime();}(function() {window.googleAltLoader=3;var sffeData_={service_host:"pagead2.googlesyndication.com",hash:"3308844383184321703",packages:"registrar",module:"ads",version:"1",m:{cei:"17300953,17300974,17300978,17300980",ah:true,uatm:500,ecfc2:true,llrm:1000,llel:"Lio=",lldl:"bS5zZWFycy5jb20=",abf:{"_afsRsPath":true,"_enableLazyLoading":true,"_googEnableQup":true,"_googErrorTurnOffPersonalization":true,"_googTimeoutTurnOffPersonalization":true,"enableEnhancedTargetingRsonc":true,"enableNonblockingSasCookie":true},mdp:1800000}};/*
+
+ Copyright The Closure Library Authors.
+ SPDX-License-Identifier: Apache-2.0
+*/
+/*
+
+ SPDX-License-Identifier: Apache-2.0
+*/
+var f=function(a){f[" "](a);return a};f[" "]=function(){};var g=function(){var a=window;if(a.top==a)return 0;a=a.top;try{var b;if(b=!!a&&null!=a.location.href)b:{try{f(a.foo);b=!0;break b}catch(e){}b=!1}var c=b}catch(e){c=!1}return c?1:2};function k(a,b,c){null!=c&&""!==c&&(a+=encodeURIComponent(b)+"="+encodeURIComponent(c)+"&");return a}function l(a){window.google_afd_request=null;window.google_afd_ad_request_done&&window.google_afd_ad_request_done(a)}
+function m(a){var b=window.XMLHttpRequest?new window.XMLHttpRequest:new window.ActiveXObject("Microsoft.XMLHTTP");b.open("GET",a,!0);b.responseType="json";l&&(b.onreadystatechange=function(){if(4==b.readyState){if("string"==typeof b.response)var c=JSON.parse(b.response);else"object"==typeof b.response&&(c=b.response);l(c)}});b.send()}function n(a){var b=window,c=document.referrer;1==a&&(c=b.top.document.referrer);return c}
+function p(){var a=window.google_afd_request;window.onerror=q;if(a)if(a.client)if(a.api&&"2"==a.api){var b=(new Date).getTime(),c=-(new Date).getTimezoneOffset(),e=g(),h=n(e);window.screen&&(a.u_h=window.screen.height,a.u_w=window.screen.width);var r=a.domain_name&&a.adtest&&"on"==a.adtest?a.domain_name:document.domain;a={output:"afd_ads",adtest:a.adtest,client:a.client.replace(/^ca-/,""),afdt:"create"==a.session_token?"create":a.token,swp:a.drid,domain_name:r,dt:b,u_tz:c,u_his:window.history.length,
+u_h:a.u_h,u_w:a.u_w,frm:e,ref:h};b="https://www.google.com/dp/ads?";for(var d in a)b=k(b,d,a[d]);a=b=b.slice(0,-1)}else if("ca-rs-"==a.client.substring(0,6)||"partner-rs-"==a.client.substring(0,11)||"rs-"==a.client.substring(0,3)||a.domain_name){d=(new Date).getTime();c=-(new Date).getTimezoneOffset();e=g();h=n(e);window.screen&&(a.u_h=window.screen.height,a.u_w=window.screen.width);a={output:"afd_ads",client:a.client.replace(/^ca-/,""),domain_name:a.domain_name,adtest:a.adtest,afdt:"create"==a.session_token?
+"create":a.token,url:a.url,swp:a.drid,dt:d,u_tz:c,u_his:window.history.length,u_h:a.u_h,u_w:a.u_w,frm:e,ref:h};d="https://www.google.com/dp/ads?";for(b in a)d=k(d,b,a[b]);a=d=d.slice(0,-1).substring(0,2E3)}else l({error_code:202}),a=null;else l({g:201}),a=null;else l({g:200}),a=null;a&&m(a)}function q(){p();return!0}p();
+})();
